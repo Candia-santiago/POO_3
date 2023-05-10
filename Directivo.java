@@ -6,7 +6,7 @@ package poo_3;
 
 import java.util.Scanner;
 public class Directivo extends Empleado{
-    
+    // falta el atributo ArrayList para empleados subordinados
     String cat;
 
     public Directivo(String cat,String nombre,int edad , Sueldo sueldo) {
@@ -16,9 +16,9 @@ public class Directivo extends Empleado{
     }
 
     public double sueldoBasicoDirectivo(){
-        System.out.println("¿qué categoria es el directivo? ");
-        String cat = teclado.next();
-        if ("A".equals(cat)){
+    //    System.out.println("¿qué categoria es el directivo? ");
+    //    String cat = teclado.next(); Ya tiene una categoría, la recibe en el constructor y la guarda en su variable this.cat
+        if ("A".equals(cat)){ 
             sueldo = sueldo + sueldo *3/100;
         }
         else{
